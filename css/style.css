@@ -94,12 +94,34 @@ body {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
 .u-center-text {
   text-align: center;
 }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
 }
 
 .btn:link, .btn:visited {
@@ -109,6 +131,7 @@ body {
   padding: 1.5rem 4rem;
   border-radius: 5rem;
   transition: all 0.2s;
+  font-size: 1.6rem;
 }
 
 .btn:hover {
@@ -124,6 +147,28 @@ body {
 .btn--white {
   background: #fff;
   color: #777;
+}
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  border: #55c57a solid 1px;
+  text-decoration: none;
+  padding: 3px;
+  transition: all .2s;
+}
+
+.btn-text:hover {
+  color: #fff;
+  background-color: #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
 }
 
 .row {

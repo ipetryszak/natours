@@ -8,6 +8,7 @@
     padding: 1.5rem 4rem;
     border-radius: 5rem;
     transition: all 0.2s;
+    font-size: $default-font-size;
   }
   &:hover {
     transform: translateY(-3px);
@@ -21,4 +22,31 @@
       background: $color-white;
       color: $color-grey;
   }
+}
+.btn-text {
+
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    border: $color-primary solid 1px;
+    text-decoration: none;
+    padding: 3px;
+    transition: all .2s;
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary;
+    box-shadow: 0 1rem 2rem rgba($color-black,.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba($color-black,.15);
+    transform: translateY(0);
+  }
+
+
 }
